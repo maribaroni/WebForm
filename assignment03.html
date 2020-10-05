@@ -1,0 +1,127 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<script language="JavaScript" src="js/script.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		
+	</head>
+	
+	<body>
+	
+	<div id="wrapper">
+				
+		<div class="column1">
+			<h4> Video Game Survey </h4> <br>
+			<p><img src="images/image_gif.gif"> This is a survey on video gaming habits and preferences.</p>
+			
+		</div>
+	
+		<div class="column2">
+		
+			<form name="intro" method="get" onSubmit="return validate()">
+
+				<!-- textfields -->
+				<label><strong>Enter First Name: </strong></label>
+				<br><input name="firstName" id="firstName" type="text" value="Geralt" size="60%"><br>
+				<label><strong>Enter Last Name: </strong></label>
+				<br><input name="lastName" id="lastName" type="text" value="Of Rivia" size="60%"><br>
+				<label><strong>Enter Your Phone </strong></label>
+				<br><input name="phone" id="phone" type="tel" value="111-111-1111" size="60%"><br> <!--type="number"-->
+				
+				<!-- dropbox -->
+				<br>
+				<strong> Video Game Engagement:  </strong>
+				<select id="levels">
+					<option value="Casual" size="60%">Casual</option>
+					<option value="Weekender" size="60%">Weekender</option>
+					<option value="Hardcore" size="60%">Hardcore</option>
+				</select>
+				<br>
+
+				<!-- checkboxes -->
+				<p><strong> Favourite Type of Game: </strong></p>
+				<label>
+				<input type="checkbox" name="gametype" value="Sidescroller">Side Scroller
+				</label>
+				<label>
+				<input type="checkbox" name="gametype" value="Multiplayer">Multiplayer
+				</label>
+				<label>
+				<input type="checkbox" name="gametype" value="Puzzle">Puzzle
+				</label>
+				<label>
+				<input type="checkbox" name="gametype" value="Coach Coop">Coach Coop
+				</label>
+				<label>
+				<input type="checkbox" name="gametype" value="Arcade">Arcade
+				</label>
+				<input type="checkbox" name="gametype" value="JRPG">JRPG
+				</label>
+				<br>
+				<input type="checkbox" name="gametype" value="FPS">FPS
+				</label>
+				<input type="checkbox" name="gametype" value="Racing">Racing
+				</label>
+				<input type="checkbox" name="gametype" value="Sports">Sports
+				</label>
+				<input type="checkbox" name="gametype" value="Soulsbourne">Soulsbourne
+				</label>
+				<input type="checkbox" name="gametype" value="Sports">Sports
+				</label>
+				<input type="checkbox" name="gametype" value="Action RPG">Action RPG
+				</label>
+				
+				<!-- radio button -->
+				<p><strong>Please select your favourite platform: </strong></p>
+				<input type="radio" name="console" value="Xbox"> Xbox
+				<input type="radio" name="console" value="PS4"> PS4
+				<input type="radio" name="console" value="Switch"> Switch
+				<input type="radio" name="console" value="PC"> PC
+				<input type="radio" name="console" value="3DS"> 3DS
+				<input type="radio" name="console" value="Mobile"> Mobile
+				<br>
+
+				<!-- submit button -->
+				<br>
+				<div class="button">
+					<input type="submit" value="Submit" size="100px">
+				</div>
+				
+			</form>
+			
+			<br>
+			<div>
+			<table>
+				<tr>
+					<td> First Name</td> 
+					<td><div id="outputName"></div> </td>
+				</tr>
+				<tr>
+					<td>Last Name</td>
+					<td><div id="outputLastName"></div></td>
+				</tr>
+				<tr>
+					<td>Phone</td>
+					<td><div id="outputPhone"></div></td>
+				</tr>
+				<tr>
+					<td>Level</td>
+					<td><div id="outputLevels"></div></td>
+				</tr>
+				<tr>
+					<td>Console</td>
+					<td><div id="outputConsole"></div></td>
+				</tr>
+				<tr>
+					<td>Game Style</td>
+					<td><div id="checkboxlist" style="display: block;"></div></td>
+				</tr>
+			</table>
+			</div>
+
+		</div>	
+	</div>
+	
+	</body>
+</html>
